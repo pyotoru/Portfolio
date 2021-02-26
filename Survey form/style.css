@@ -1,0 +1,141 @@
+body {
+	background: radial-gradient(
+		circle,
+		rgba(47, 0, 165, 0.6978991425671831) 71%,
+		rgba(151, 119, 217, 0.1572828960685837) 176%
+	);
+	color: #fffafa;
+	font-size: 20px;
+	font-family: candara;
+}
+#header-content {
+	padding-bottom: 80px;
+	text-align: center;
+}
+#logo-img-left {
+	position: absolute;
+	margin-left: -150px;
+	width: 150px;
+	top: 0px;
+}
+#title {
+	display: inline;
+	font-size: 40px;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	line-height: 50px;
+}
+#survey-form {
+	text-align: left;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	background: rgba(0, 0, 0, 0.5);
+	width: 900px;
+	margin: 0 auto;
+}
+
+.input-form {
+	padding: 10px;
+	margin-left: 12px;
+}
+
+input,
+select,
+textarea {
+	padding: 5px;
+	width: 570px;
+	border: 0;
+	-ms-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}
+
+#radio-div {
+	text-align: left;
+}
+#radio-button {
+	text-align: left;
+	width: 30px;
+}
+
+#checkboxes-div {
+	text-align: left;
+}
+#checkbox {
+	width: 30px;
+}
+
+#textarea {
+	height: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+	body {
+		background: radial-gradient(
+			circle,
+			rgba(47, 0, 165, 0.6978991425671831) 71%,
+			rgba(151, 119, 217, 0.1572828960685837) 176%
+		);
+		color: #fffafa;
+		font-size: 10px;
+		font-family: candara;
+	}
+	#header-content {
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#logo-img-left {
+		position: absolute;
+		margin-left: -90px;
+		width: 80px;
+		top: 0px;
+	}
+	#title {
+		display: inline;
+		font-size: 10px;
+		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+		line-height: 38px;
+	}
+	#survey-form {
+		text-align: left;
+		padding-bottom: 30px;
+		background: rgba(0, 0, 0, 0.5);
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.input-form {
+		padding: 10px;
+		margin-left: 0.5px;
+	}
+
+	input,
+	select,
+	textarea {
+		width: 250px;
+		height: 10px;
+		border: 0;
+		-ms-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+	}
+
+	#radio-div {
+		text-align: left;
+	}
+	#radio-button {
+		width: 10px;
+	}
+
+	#checkboxes-div {
+		text-align: left;
+	}
+	#checkbox {
+		width: 10px;
+	}
+
+	#textarea {
+		height: 100px;
+	}
+}

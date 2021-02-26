@@ -1,0 +1,237 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main id="main">
+
+<header>
+ <div id="header-content"> 
+ <img id="logo-img-left"
+src="https://i.imgur.com/ezcbCfB.png"
+alt="premier league logo of a lion head">
+<span><h1 id="title">Premier League Survey form</h1><br>
+which club do you support?</></span>
+</div>   
+</header>
+
+<form id="survey-form">
+  
+  <div class="input-form">
+  <div class="survey-label">   
+  <label id="name-label" for="name">Your name</label>
+    </div>
+  <div class="survey-input">
+<input
+       name="name"
+       id="name"
+       type="text"
+       placeholder="type your name"
+       required>
+    </div>
+    </div>
+  
+  <div class="input-form">
+  <div class="survey-label">   
+  <label id="email-label" for="email">Email</label>
+    </div>
+  <div class="survey-input">
+<input 
+       type="email"
+       name="email"
+       id="email"
+       placeholder="type your email"
+       required>
+    </div>
+    </div>
+  
+   <div class="input-form">
+  <div class="survey-label">   
+  <label id="number-label" for="number">Age</label>
+    </div>
+  <div class="survey-input">
+<input 
+       type="number"
+       name="number"
+       max="99"
+       min="1"
+       id="number"
+       placeholder="choose your age">
+    </div>
+    </div>
+
+      <div class="input-form">
+  <div class="survey-label"> 
+<div>
+    <label>Which premier league club do you support?</label>
+    <br>
+<input id="team-textarea"
+       type="text"
+          placeholder="type the name of your club"
+          required>
+     
+    </div>    
+    </div>
+    </div>
+ 
+ <div class="input-form">
+  <div class="survey-label">   
+  <label for="dropdown" >Which option describes well your relationship with the club?</label>
+    </div>
+  <div class="survey-input">
+ <select id="dropdown" name="levels" required>
+   <option id="dropdown">level 1: I have become a fan recently</option>
+    <option id="dropdown">level 2: I have been a fan since childhood</option>
+    <option id="dropdown">level 3: I will never abandon the club no matter what</option>
+    <option id="dropdown">level 4: The club is all my life</option>
+  </select>
+    </div>
+    </div>
+  
+   <div class="input-form">
+  <div class="survey-label">   
+  <label>Which of these european leagues you find are best to watch?</label>
+    <br>
+     <div id="radio-div">
+    <label id="Premier-league">
+        <input 
+          id="radio-button"
+          name="best-league"
+          value="leagues"
+          type="radio"
+          class="input-radio"
+          checked
+        />Premier League</label>
+    <br>  
+    <label id="La Liga">
+        <input
+          id="radio-button"
+          name="best-league"
+          value="leagues"
+          type="radio"
+          class="input-radio"
+        />La Liga</label>
+<br>
+      <label id="Serie-a"
+        ><input
+          id="radio-button"
+          name="best-league"
+          value="leagues"
+          type="radio"
+          class="input-radio"
+        />Serie A</label>
+    <br>
+    <label id="Bundesliga">
+        <input
+          id="radio-button"
+          name="best-league"
+          value="leagues"
+          type="radio"
+          class="input-radio"
+        />Bundesliga</label>
+    </div>
+    </div>
+    </div>
+  
+  <div class="input-form">
+  <div class="survey-label">   
+  <label>What goods of your club have you got?</label>
+
+   
+  <div id="checkboxes-div"> 
+    <label id="Kit">
+      <input
+             id="checkbox"
+             name="goods"
+         type="checkbox"
+             value="goods"
+             >Kit
+      </label>
+    
+    <label id="scarf">
+      <input
+             id="checkbox"
+             name="goods"
+         type="checkbox"
+             value="goods"
+             >Scarf
+      </label>
+    
+ 
+    <label id="Cap">
+      <input
+             id="checkbox"
+             name="goods"
+         type="checkbox"
+             value="goods"
+             >Cap
+      </label>
+    
+ 
+    <label id="Gloves">
+      <input
+             id="checkbox"
+             name="goods"
+         type="checkbox"
+             value="goods"
+             >Gloves
+      </label>
+   
+  
+    <label id="Bracelet">
+      <input
+             id="checkbox"
+             name="goods"
+         type="checkbox"
+             value="goods"
+             >Bracelet
+      </label>
+    <label id="Mug">
+      <input
+             id="checkbox"
+             name="goods"
+         type="checkbox"
+             value="goods"
+             >Mug
+      </label>
+    <br>
+    <label id="Mug">
+      <input
+             id="checkbox"
+             name="goods"
+         type="checkbox"
+             value="goods"
+             >Other:<br></div>
+    <input type="text" width="20" placholer="please, write them down">
+      </label>
+    
+  </div>
+</div>  
+
+  
+    <div class="input-form">
+  <div class="survey-label">   
+  <div>
+    <label>Have you got any comments, please let us know below.<br>Thank you for your time.</label>
+    <br>
+<textarea id="textarea"
+       type="textarea">
+       </textarea>
+    </div>
+    
+    </div>
+    </div>
+
+  
+<form>
+  <div class="input-form">
+  <div class="survey-label">   
+    <div>
+    <button id="submit"
+           type:"submit">
+    Submit</submit>
+      </div>
+    </div>
+    </div>
+  </main>
+    </form>
+    
+  </main>
+  
