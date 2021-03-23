@@ -133,7 +133,7 @@ a:hover {
 	opacity: 0.5;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 800px) {
 	body {
 		font-size: 12px;
 		background: #fffff7;
@@ -161,7 +161,7 @@ a:hover {
 
 	#title {
 		margin-left: 5px;
-		font-size: 1px;
+		font-size: 30px;
 		line-height: 30px;
 		text-align: center;
 	}
@@ -238,6 +238,7 @@ a:hover {
 	th {
 		text-align: left;
 		padding: 1px;
+		font-size: 12px;
 	}
 	tr:nth-child(even) {
 		background-color: #dddddd;
@@ -250,5 +251,12 @@ a:hover {
 	}
 	a:hover {
 		opacity: 0.5;
+	}
+
+	footer {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding-bottom: 20px;
+		text-align: left;
 	}
 }

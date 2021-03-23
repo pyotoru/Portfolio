@@ -63,4 +63,7 @@ header {
 		overflow-y: auto;
 		overflow-x: hidden;
 	}
+	img {
+		height: 13%;
+	}
 } ;
