@@ -94,8 +94,8 @@ footer {
 	height: 150px;
 	color: #fffafa;
 	background-color: #141823;
-	margin-right: -400px;
-	margin-left: -400px;
+	margin-right: -300px;
+	margin-left: -300px;
 	display: flex;
 	justify-content: center;
 }
@@ -111,8 +111,6 @@ footer {
 }
 
 #profile {
-	padding-left: 350px;
-	padding-right: 350px;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -246,8 +244,8 @@ footer {
 		height: 150px;
 		color: #fffafa;
 		background-color: #141823;
-		margin-right: -400px;
-		margin-left: -400px;
+		margin-right: -300px;
+		margin-left: -300px;
 		display: flex;
 		justify-content: center;
 	}
