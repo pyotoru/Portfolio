@@ -6,16 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
 </head>
-<body>
-  <link rel="stylesheet" href="style.css">
+<body class="text-center">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/fec472640d.js" crossorigin="anonymous"></script>
   <div id="main">
 
     <!--Welcome section-->
     <header>
       <section id="welcome-section">
-        <h1>Hello, my name is Piotr</br>a starting web developer</br>This is my portfolio </h1>
+        <h1 class="text-center">Hello, my name is Piotr</br>a starting web developer</br>This is my portfolio </h1>
       </section>
       </br>
       <!--end of Welcome section-->
@@ -31,56 +33,68 @@
 
       <!--Start of projects section-->
       <section id="projects">
-        <h2>Projects</h2>
-        Have a look at my current projects.
+        <h2 class="text-center">Projects</h2>
+        <p>
+          Have a look at my current projects.
+        </p>
+
         </br>
-        </br>
-        <h2>HTML/CSS</h2>
-        <div id="projects-grid">
+
+        <h4><b>JavaScript</b></h4>
+        <div class="row" id="projects-grid">
           <div id="tribute-page">
-            <h3>Tribute Page</h3>
+            <h3>Toto app</h3>
             <a href="https://pyotoru.github.io/Portfolio/Tribute%20page/">
               <img id="tile-img" alt="tribute-page tile"
                 src="https://pyotoru.github.io/Portfolio/Tribute%20page/tribute-page-preview.png" width="280"
                 height="280" target="_blank">
             </a>
           </div>
-
-          <div id="survey-form">
-            <h3>Survey form</h3>
-            <a href="https://pyotoru.github.io/Portfolio/Survey%20form/">
-              <img id="tile-img" alt="survey form tile"
-                src="https://pyotoru.github.io/Portfolio/Survey form/2021-03-13_14-06.png" width="280" height="280"
-                target="_blank">
-            </a>
-          </div>
-
-          <div id="product-page" class="project-tile">
-            <h3>Product page</h3>
-            <a href="https://pyotoru.github.io/Portfolio/Product%20landing%20page/">
-              <img id="tile-img" alt="product page tile"
-                src="https://pyotoru.github.io/Portfolio/Product%20landing%20page/product-landing-page-preview.png"
-                width="280" height="280" target="_blank">
-            </a>
-          </div>
-
-
-          <div id="technical-documentation" class="project-tile">
-            <h3>Technical documentation page</h3>
-            <a href="https://pyotoru.github.io/Portfolio/Documentation%20page/">
-              <img id="tile-img" alt="technical documentation tile"
-                src="https://pyotoru.github.io/Portfolio/Documentation page/2021-03-13_14-06_1.png" width="280"
-                height="280" target="_blank">
-            </a>
-          </div>
-
         </div>
+        <br>
+        <h4><b>Plain HTML/CSS</b></h2>
+          <div class="row" id="projects-grid">
+            <div class="col-xs-6 col-lg-3" id="tribute-page">
+              <h3>Tribute Page</h3>
+              <a href="https://pyotoru.github.io/Portfolio/Tribute%20page/">
+                <img id="tile-img" alt="tribute-page tile"
+                  src="https://pyotoru.github.io/Portfolio/Tribute%20page/tribute-page-preview.png" width="280"
+                  height="280" target="_blank">
+              </a>
+            </div>
+
+            <div class="col-xs-6 col-lg-3" id="survey-form">
+              <h3>Survey form</h3>
+              <a href="https://pyotoru.github.io/Portfolio/Survey%20form/">
+                <img id="tile-img" alt="survey form tile"
+                  src="https://pyotoru.github.io/Portfolio/Survey form/2021-03-13_14-06.png" width="280" height="280"
+                  target="_blank">
+              </a>
+            </div>
+
+            <div class="col-xs-6 col-lg-3" id="product-page" class="project-tile">
+              <h3>Product page</h3>
+              <a href="https://pyotoru.github.io/Portfolio/Product%20landing%20page/">
+                <img id="tile-img" alt="product page tile"
+                  src="https://pyotoru.github.io/Portfolio/Product%20landing%20page/product-landing-page-preview.png"
+                  width="280" height="280" target="_blank">
+              </a>
+            </div>
+
+
+            <div class="col-xs-6 col-lg-3" id="technical-documentation" class="project-tile">
+              <h3>Technical documentation page</h3>
+              <a href="https://pyotoru.github.io/Portfolio/Documentation%20page/">
+                <img id="tile-img" alt="technical documentation tile"
+                  src="https://pyotoru.github.io/Portfolio/Documentation page/2021-03-13_14-06_1.png" width="280"
+                  height="280" target="_blank">
+              </a>
+            </div>
+
+          </div>
       </section>
-      <br>
-      <br>
-      <br>
-      <h2>JavaScript</h2>
-      <p>Coming soon...</p>
+
+
 
 
       <!--end of projects section-->
@@ -108,7 +122,8 @@
           in the near future.
           </br>
           Apart from
-          studying web development, I usually spend my time working out, watching football, playing piano, playing video
+          studying web development, I usually spend my time working out, watching football, playing piano, playing
+          video
           games and reading books. </br>
         </p>
 
@@ -123,7 +138,7 @@
 
         <h2>Contact</h2>
         I am waiting for your contact. Pick your favorite.
-        </br></br>
+        </br>
 
         <div class="contact-links">
           <a href="mailto:wawrzyniak.peter@gmail.com">
