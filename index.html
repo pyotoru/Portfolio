@@ -54,7 +54,7 @@
         <br>
         <h4><b>Plain HTML/CSS</b></h2>
           <div class="row" id="projects-grid">
-            <div class="col-xs-6 col-lg-3" id="tribute-page">
+            <div class="col-xs-6 col-md-4 col-lg-4" id="tribute-page">
               <h3>Tribute Page</h3>
               <a href="https://pyotoru.github.io/Portfolio/Tribute%20page/">
                 <img id="tile-img" alt="tribute-page tile"
@@ -63,7 +63,7 @@
               </a>
             </div>
 
-            <div class="col-xs-6 col-lg-3" id="survey-form">
+            <div class="col-xs-6 col-md-4 col-lg-4" id="survey-form">
               <h3>Survey form</h3>
               <a href="https://pyotoru.github.io/Portfolio/Survey%20form/">
                 <img id="tile-img" alt="survey form tile"
@@ -72,7 +72,7 @@
               </a>
             </div>
 
-            <div class="col-xs-6 col-lg-3" id="product-page" class="project-tile">
+            <div class="col-xs-6 col-md-4 col-lg-4" id="product-page" class="project-tile">
               <h3>Product page</h3>
               <a href="https://pyotoru.github.io/Portfolio/Product%20landing%20page/">
                 <img id="tile-img" alt="product page tile"
@@ -82,7 +82,7 @@
             </div>
 
 
-            <div class="col-xs-6 col-lg-3" id="technical-documentation" class="project-tile">
+            <div class="col-xs-6 col-md-4 col-lg-4" id="technical-documentation" class="project-tile">
               <h3>Technical documentation page</h3>
               <a href="https://pyotoru.github.io/Portfolio/Documentation%20page/">
                 <img id="tile-img" alt="technical documentation tile"
@@ -104,23 +104,24 @@
       <!--start of about-me section-->
       <section id="about-me">
         <h2>About me</h2>
+        </br>
         <div class="about-me">
-          <img id="my-photo" src="https://pyotoru.github.io/Portfolio/photo_of_me.png" width="15%" height="15%"
-            border-radius="50px">
+          <a>
+            <img class="img-responsive" id="my-photo" src="https://pyotoru.github.io/Portfolio/photo_of_me.png">
+          </a>
 
-          <span>
+          <span class="text-left">
             <b>Name</b>: Piotr Wawrzyniak</br>
             <b>Date of birth</b>: 01/04/1993</br>
             <b>Place of birth</b>: Poland, Poznan</br>
             <b>Place of residence</b>: Japan, Tokyo</br>
             <b>Alma mater</b>: SOAS (University of London)</br>
-            <b>Nearest station</b>: Sugamo</br>
           </span>
         </div>
-
+        </br>
         <p>I am currently studying html, css and javascript. I plan to become a full stack web developer
           in the near future.
-          </br>
+
           Apart from
           studying web development, I usually spend my time working out, watching football, playing piano, playing
           video
@@ -140,22 +141,30 @@
         I am waiting for your contact. Pick your favorite.
         </br>
 
-        <div class="contact-links">
-          <a href="mailto:wawrzyniak.peter@gmail.com">
-            <i class="fas fa-at fa-lg" style="color:#d44638;"></i>
-            Send a mail</a>
+        <div class="contact-links row">
+          <div class="col-xs-3">
+            <a href="mailto:wawrzyniak.peter@gmail.com">
+              <i class="fas fa-at fa-lg" style="color:#d44638;"></i>
+            </a>
+          </div>
+          <div class="col-xs-3">
+            <a href="https://github.com/pyotoru/" target="_blank" class="btn contact-details" id="profile-link"><i
+                class="fab fa-github fa-lg" style="color:#141823;"></i>
+            </a>
+          </div>
+          <div class="col-xs-3">
 
-          <a href="https://github.com/pyotoru/" target="_blank" class="btn contact-details" id="profile-link"><i
-              class="fab fa-github fa-lg" style="color:#141823;"></i>
-            GitHub</a>
+            <a href="https://twitter.com/batatshi" target="_blank" class="btn contact-details"><i
+                class="fab fa-twitter fa-lg" style="color:#00acee;"></i>
+            </a>
+          </div>
+          <div class="col-xs-3">
 
-          <a href="https://twitter.com/batatshi" target="_blank" class="btn contact-details"><i
-              class="fab fa-twitter fa-lg" style="color:#00acee;"></i>
-            Twitter</a>
+            <a href="https://www.facebook.com/batatshi" target="_blank" class="btn contact-details"><i
+                class="fab fa-facebook-square fa-lg" style="color:#3b5998;"></i>
+            </a>
+          </div>
 
-          <a href="https://www.facebook.com/batatshi" target="_blank" class="btn contact-details"><i
-              class="fab fa-facebook-square fa-lg" style="color:#3b5998;"></i>
-            Facebook</a>
         </div>
 
       </section>
