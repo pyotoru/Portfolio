@@ -1,3 +1,5 @@
 # This is my portfolio.
 
-pyotoru.github.io/portfolio/
+In it you can check my current projects and get to know more about me.
+</br>
+I will be updating this portfolio and hopefully make it look better day by day.
