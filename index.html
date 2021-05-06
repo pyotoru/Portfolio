@@ -6,183 +6,158 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
 </head>
-<body class="text-center">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/fec472640d.js" crossorigin="anonymous"></script>
-  <div id="main">
+<body class="text-center"></body>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/fec472640d.js" crossorigin="anonymous"></script>
+<div id="main">
 
-    <!--Welcome section-->
-    <header>
-      <section id="welcome-section">
-        <h1 class="text-center">Hi, my name is Piotr</br>a starting web developer</br>This is my portfolio</br>
-          <a href="#navbar">
-            <nav id="navbar">
-              <a class="nav-link" href="#projects" id="nav-link">Projects</a>
-              <a class="nav-link" href="#about-me" id="nav-link">About me</a>
-              <a class="nav-link" href="#contact" id="nav-link">Contact</a>
-            </nav>
+  <!--Welcome section-->
+  <header>
+    <section id="welcome-section">
+      <h1>Hi, my name is Piotr</br>a starting web developer</br>This is my portfolio</br>
+        <a href="#navbar">
+          <nav id="navbar">
+            <a class="nav-link" href="#projects" id="nav-link">Projects</a>
+            <a class="nav-link" href="#about-me" id="nav-link">About me</a>
+            <a class="nav-link" href="#contact" id="nav-link">Contact</a>
+          </nav>
+        </a>
+        </input>
+      </h1>
+  </header>
+  </section>
+  </br>
+  </br>
+  <!--end of Welcome section-->
+
+
+  <!--Start of projects section-->
+  <section id="projects">
+    <h2 class="text-center">Projects</h2>
+    <p>
+      Have a look at my current projects.
+    </p>
+    </br>
+    <button type="button" class="collapsibleJS"><b>JavaScript <i class="far fa-caret-square-down"
+          text-align="right"></b></i></button>
+    <div class="content">
+      <div class="row" id="projects-grid">
+        <div id="tribute-page">
+          <h3>Toto app</h3>
+          <a href="https://github.com/pyotoru/toto-app">
+            <img class="img-resonsive" id="tile-img" alt="tribute-page tile"
+              src="https://raw.githubusercontent.com/pyotoru/toto-app/master/toto-app-preview.png" width="280"
+              height="280" target="_blank">
           </a>
-          </input>
-        </h1>
-
-    </header>
-
-    </section>
-    </br>
-    <!--end of Welcome section-->
-
-
-    </br>
-
-    <!--Start of projects section-->
-    <section id="projects">
-      <h2 class="text-center">Projects</h2>
-      <p>
-        Have a look at my current projects.
-      </p>
-
-      </br>
-
-
-      <button type="button" class="collapsibleJS"><b>JavaScript <i class="far fa-caret-square-down"
-            text-align="right"></b></i></button>
-      <div class="content">
-        <div class="row" id="projects-grid">
-          <div id="tribute-page">
-            <h3>Toto app</h3>
-            <a href="https://github.com/pyotoru/toto-app">
-              <img class="img-resonsive" id="tile-img" alt="tribute-page tile"
-                src="https://raw.githubusercontent.com/pyotoru/toto-app/master/toto-app-preview.png" width="280"
-                height="280" target="_blank">
-            </a>
-            <script src="./js-collapse.js"></script>
-          </div>
+          <script src="./js-collapse.js"></script>
         </div>
       </div>
-
-      </br>
-
-      <button type="button" class="collapsibleHTMLcss"><b>Plain HTML/CSS <i class="far fa-caret-square-down"
-            text-align="right"></b></i></button>
-      <div class="content">
-        <div class="row" id="projects-grid">
-          <div class="col-xs-6 col-md-4 col-lg-4" id="tribute-page">
-            <h3>Tribute Page</h3>
-            <a href="https://pyotoru.github.io/Portfolio/Tribute%20page/">
-              <img id="tile-img" alt="tribute-page tile"
-                src="https://pyotoru.github.io/Portfolio/Tribute%20page/tribute-page-preview.png" width="280"
-                height="280" target="_blank">
-            </a>
-
-
-          </div>
-
-          <div class="col-xs-6 col-md-4 col-lg-4" id="survey-form">
-            <h3>Survey form</h3>
-            <a href="https://pyotoru.github.io/Portfolio/Survey%20form/">
-              <img id="tile-img" alt="survey form tile"
-                src="https://pyotoru.github.io/Portfolio/Survey form/2021-03-13_14-06.png" width="280" height="280"
-                target="_blank">
-            </a>
-          </div>
-
-          <div class="col-xs-6 col-md-4 col-lg-4" id="product-page" class="project-tile">
-            <h3>Product page</h3>
-            <a href="https://pyotoru.github.io/Portfolio/Product%20landing%20page/">
-              <img id="tile-img" alt="product page tile"
-                src="https://pyotoru.github.io/Portfolio/Product%20landing%20page/product-landing-page-preview.png"
-                width="280" height="280" target="_blank">
-            </a>
-          </div>
-
-
-          <div class="col-xs-6 col-md-4 col-lg-4" id="technical-documentation" class="project-tile">
-            <h3>Technical documentation page</h3>
-            <a href="https://pyotoru.github.io/Portfolio/Documentation%20page/">
-              <img id="tile-img" alt="technical documentation tile"
-                src="https://pyotoru.github.io/Portfolio/Documentation page/2021-03-13_14-06_1.png" width="280"
-                height="280" target="_blank">
-            </a>
-            <script src="./html-css-colapse.js"></script>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <!--end of projects section-->
-
-    </br></br>
-
-    <!--start of about-me section-->
-    <section id="about-me">
-      <h2>About me</h2>
-      </br>
-      <div class="about-me center-block">
-        <img class="img-responsive" id="my-photo" src="https://pyotoru.github.io/Portfolio/photo_of_me.png">
-
-        <span class="text-left">
-          <b>Name</b>: Piotr Wawrzyniak</br>
-          <b>Date of birth</b>: 01/04/1993</br>
-          <b>Place of birth</b>: Poland, Poznan</br>
-          <b>Place of residence</b>: Japan, Tokyo</br>
-          <b>Alma mater</b>: SOAS (University of London)</br>
-        </span>
-      </div></br>
-      <p id="profile">I am currently studying html, css and javascript. I plan
-        to become a full stack web developer in the near future.
-        </br>
-        Apart from studying web development, I usually spend my time working out, watching football, playing piano,
-        playing video games and reading books. </br>
-      </p>
-
-
-
-    </section>
-    <!--end of about-me section-->
+    </div>
     </br>
 
-    <!--start of contact section-->
-    <section id="contact">
+    <button type="button" class="collapsibleHTMLcss"><b>Plain HTML/CSS <i class="far fa-caret-square-down"
+          text-align="right"></b></i></button>
+    <div class="content">
+      <div class="row" id="projects-grid">
+        <div class="col-xs-6 col-md-4 col-lg-4" id="tribute-page">
+          <h3>Tribute Page</h3>
+          <a href="https://pyotoru.github.io/Portfolio/Tribute%20page/">
+            <img id="tile-img" alt="tribute-page tile"
+              src="https://pyotoru.github.io/Portfolio/Tribute%20page/tribute-page-preview.png" width="280" height="280"
+              target="_blank">
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-4 col-lg-4" id="survey-form">
+          <h3>Survey form</h3>
+          <a href="https://pyotoru.github.io/Portfolio/Survey%20form/">
+            <img id="tile-img" alt="survey form tile"
+              src="https://pyotoru.github.io/Portfolio/Survey form/2021-03-13_14-06.png" width="280" height="280"
+              target="_blank">
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-4 col-lg-4" id="product-page" class="project-tile">
+          <h3>Product page</h3>
+          <a href="https://pyotoru.github.io/Portfolio/Product%20landing%20page/">
+            <img id="tile-img" alt="product page tile"
+              src="https://pyotoru.github.io/Portfolio/Product%20landing%20page/product-landing-page-preview.png"
+              width="280" height="280" target="_blank">
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-4 col-lg-4" id="technical-documentation" class="project-tile">
+          <h3>Technical documentation page</h3>
+          <a href="https://pyotoru.github.io/Portfolio/Documentation%20page/">
+            <img id="tile-img" alt="technical documentation tile"
+              src="https://pyotoru.github.io/Portfolio/Documentation page/2021-03-13_14-06_1.png" width="280"
+              height="280" target="_blank">
+          </a>
+          <script src="./html-css-colapse.js"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+  </br>
+  </br>
+  <!--end of projects section-->
 
-      <h2>Contact</h2>
-      I am waiting for your contact. Pick your favorite.
+  <!--start of about-me section-->
+  <section id="about-me">
+    <h2>About me</h2>
+    </br>
+    <div class="about-me center-block">
+      <img class="img-responsive" id="my-photo" src="https://pyotoru.github.io/Portfolio/photo_of_me.png">
+      <span class="text-left">
+        <b>Name</b>: Piotr Wawrzyniak</br>
+        <b>Date of birth</b>: 01/04/1993</br>
+        <b>Place of birth</b>: Poland, Poznan</br>
+        <b>Place of residence</b>: Japan, Tokyo</br>
+        <b>Alma mater</b>: SOAS (University of London)</br>
+      </span>
+    </div></br>
+    <p id="profile">I am currently studying html, css and javascript. I plan
+      to become a full stack web developer in the near future.
       </br>
-      </br>
-      <div class="contact-links-row">
-        <div>
-          <a href="mailto:wawrzyniak.peter@gmail.com">
-            <i class="fas fa-at fa-lg" style="color:#d44638;"></i>
-          </a>
-        </div>
-        <div>
-          <a href="https://github.com/pyotoru/" target="_blank" class="btn contact-details" id="profile-link"><i
-              class="fab fa-github fa-lg" style="color:#141823;"></i>
-          </a>
-        </div>
-        <div>
-
-          <a href="https://twitter.com/batatshi" target="_blank" class="btn contact-details"><i
-              class="fab fa-twitter fa-lg" style="color:#00acee;"></i>
-          </a>
-        </div>
-        <div>
-          <a href="https://www.facebook.com/batatshi" target="_blank" class="btn contact-details"><i
-              class="fab fa-facebook-square fa-lg" style="color:#3b5998;"></i>
-          </a>
-        </div>
-
-    </section>
-  </div>
+      Apart from studying web development, I usually spend my time working out, watching football, playing piano,
+      playing video games and reading books. </br>
+    </p>
+  </section>
+  </br>
+  <!--end of about-me section-->
 
 
-  <!--end of contact section-->
+  <!--start of contact section-->
+  <section id="contact">
+    <h2>Contact</h2>
+    I am waiting for your contact. Pick your favorite.
+    </br>
+    </br>
+    <div class="contact-links-row">
+      <div>
+        <a href="mailto:wawrzyniak.peter@gmail.com">
+          <i class="fas fa-at fa-lg" style="color:#d44638;"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://github.com/pyotoru/" target="_blank" class="btn contact-details" id="profile-link"><i
+            class="fab fa-github fa-lg" style="color:#141823;"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/batatshi" target="_blank" class="btn contact-details"><i
+            class="fab fa-twitter fa-lg" style="color:#00acee;"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/batatshi" target="_blank" class="btn contact-details"><i
+            class="fab fa-facebook-square fa-lg" style="color:#3b5998;"></i>
+        </a>
+      </div>
+  </section>
+</div>
+
+<!--end of contact section-->
 
 </body>
 <footer id="footer"></footer>
