@@ -34,6 +34,7 @@ br {
 	height: 930px;
 	display: flex;
 	justify-content: center;
+	margin-top: 0px;
 }
 
 #navbar {
@@ -44,6 +45,9 @@ br {
 	color: #fffafa;
 	margin-top: 0px;
 	border: solid 1px;
+	margin-left: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .nav-link {
 	text-decoration: none;
