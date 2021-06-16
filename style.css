@@ -1,7 +1,29 @@
+/*Custom Properties*/
+
+:root {
+	--ff-primary: "Source Sans Pro", sans-serif;
+	--ff-secondary: "Source Code Pro", monospace;
+
+	--fw-reg: 300;
+	--fw-bold: 900;
+
+	--clr-light: #fffafa;
+	--clr-dark: #141821;
+	--clr-accent: ;
+
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+
+	--bs: 0.25em 0.25em 0.7em rgba(0, 0, 0, 0.25),
+		0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
 body {
 	margin: 0;
 	font-family: candara;
-	font-size: 14px;
+	font-size: var(--fs-h2);
 	color: #141823;
 	background-color: #fffafa;
 	text-decoration: none;
@@ -27,14 +49,6 @@ br {
 }
 
 #welcome-section {
-	color: #fffafa;
-	background-color: #141823;
-	margin-left: -300px;
-	margin-right: -300px;
-	height: 930px;
-	display: flex;
-	justify-content: center;
-	margin-top: 0px;
 }
 
 #navbar {
@@ -272,4 +286,12 @@ html {
 		width: 150px;
 		height: 150px;
 	}
+}
+
+/*header*/
+
+.logo {
+	font-family: "Parisienne", serif;
+	font-size: var(--fs-h1);
+	color: var(--clr-light);
 }
