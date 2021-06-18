@@ -13,33 +13,64 @@
 </head>
 <body>
 
-  <!--Header-->
-  <section class="welcome-section">
-    <header>
-      <div class="logo">
-        PW
+  <header>
+    <div class="logo">
+    </div>
+    <button class="nav-toggle" area-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav-bar">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-me">About me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--start of contact section-->
+    <section id="contact">
+
+      <div class="contact-links-row">
+        <div>
+          <a href="mailto:wawrzyniak.peter@gmail.com" target="_blank" class="btn contact-details" id="profile-link">
+            <i class="fas fa-at fa-lg" style="color:#d44638;"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/pyotoru/" target="_blank" class="btn contact-details" id="profile-link"><i
+              class="fab fa-github fa-lg" style="color:#141823;"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://twitter.com/batatshi" target="_blank" class="btn contact-details" id="profile-link"><i
+              class="fab fa-twitter fa-lg" style="color:#00acee;"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/batatshi" target="_blank" class="btn contact-details" id="profile-link"><i
+              class="fab fa-facebook-square fa-lg" style="color:#3b5998;"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://qiita.com/pyotoru" target="_blank" class="btn contact-details" id="profile-link">
+            <div id="qiita" class="fa-stack" style="color:#4cb10d">
+              <i class="fa fa-square fa-lg"></i>
+              <i class="fa fa-search fa-stack-1x fa-inverse fa-lg"></i>
+            </div>
+          </a>
+        </div>
       </div>
-      <button class="nav-toggle" area-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav-bar">
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about-me">About me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    </section>
 
-    </header>
-  </section>
-
-
+  </header>
 
   <!--Introduction-->
-  <h1>Hi, my name is Piotr<br>a starting web developer<br>This is my portfolio<br></h1>
-
-
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">Hi, my name is <strong>Piotr</strong><br></h1>
+    <p class="section__subtitle section__subtitle--intro">a web developer</p>
+    <img src="img/introduction.jpg" alt="a picture of me" class="intro__img">
+  </section>
 
   <!--Start of projects section-->
   <section id="projects">
@@ -154,43 +185,7 @@
   <!--end of about-me section-->
 
 
-  <!--start of contact section-->
-  <section id="contact">
-    <h2>Contact</h2>
-    I am waiting for your contact. Pick your favorite.
-    <br>
-    <br>
-    <div class="contact-links-row">
-      <div>
-        <a href="mailto:wawrzyniak.peter@gmail.com" target="_blank" class="btn contact-details" id="profile-link">
-          <i class="fas fa-at fa-lg" style="color:#d44638;"></i>
-        </a>
-      </div>
-      <div>
-        <a href="https://github.com/pyotoru/" target="_blank" class="btn contact-details" id="profile-link"><i
-            class="fab fa-github fa-lg" style="color:#141823;"></i>
-        </a>
-      </div>
-      <div>
-        <a href="https://twitter.com/batatshi" target="_blank" class="btn contact-details" id="profile-link"><i
-            class="fab fa-twitter fa-lg" style="color:#00acee;"></i>
-        </a>
-      </div>
-      <div>
-        <a href="https://www.facebook.com/batatshi" target="_blank" class="btn contact-details" id="profile-link"><i
-            class="fab fa-facebook-square fa-lg" style="color:#3b5998;"></i>
-        </a>
-      </div>
-      <div>
-        <a href="https://qiita.com/pyotoru" target="_blank" class="btn contact-details" id="profile-link">
-          <div id="qiita" class="fa-stack" style="color:#4cb10d">
-            <i class="fa fa-square fa-lg"></i>
-            <i class="fa fa-search fa-stack-1x fa-inverse fa-lg"></i>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+
 
   <!--end of contact section-->
   <footer id="footer"></footer>
