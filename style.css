@@ -14,7 +14,7 @@
 
 	--clr-light: #fffafa;
 	--clr-dark: #141821;
-	--clr-accent: ;
+	--clr-accent: #deb887;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -34,7 +34,7 @@ html {
 		--fs-h1: 4.5rem;
 		--fs-h2: 3.75rem;
 		--fs-h3: 1.5rem;
-		--fs-body: 1.125rem;
+		--fs-body: 1.5rem;
 	}
 }
 
@@ -47,6 +47,18 @@ body {
 	color: var(--clr-light);
 	background-color: var(--clr-dark);
 	text-decoration: none;
+	line-height: 2;
+}
+
+@media (min-width: 800px) {
+	body {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: 0;
+		padding: 7.5em 7.5em 7.5em 7.5em;
+	}
 }
 
 h1 {
@@ -62,6 +74,13 @@ h3 {
 img {
 	display: block;
 	max-width: 100%;
+	box-shadow: var(--bs);
+}
+
+@media (max-width: 600px) {
+	img {
+		max-width: 75%;
+	}
 }
 
 section {
@@ -78,6 +97,11 @@ strong {
 	margin-bottom: 0.25em;
 }
 
+.section__subtitle {
+	margin: 0;
+	font-size: var(--fs-h3);
+}
+
 .section__title--intro {
 	margin-bottom: 0.25em;
 	font-weight: var(--fw-reg);
@@ -85,6 +109,15 @@ strong {
 
 .section__title--intro strong {
 	display: block;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+	background: var(--clr-accent);
+	color: var(--clr-dark);
+	padding: 0.25em 1em;
+	font-family: var(--ff-secondary);
+	margin-bottom: 1em;
 }
 
 /*logo*/
@@ -118,7 +151,6 @@ strong {
 	height: 100%;
 	flex-direction: row;
 	justify-content: space-evenly;
-	align-items: center;
 	margin: 0;
 	padding: 0;
 }
@@ -132,6 +164,7 @@ strong {
 
 .nav-link:hover {
 	color: var(--clr-accent);
+	text-decoration: none;
 }
 
 .nav-toggle {
@@ -171,7 +204,7 @@ strong {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-	background: var(--clr-light);
+	background: var(--clr-accent);
 	width: 2em;
 	height: 3px;
 	border-radius: 1em;
@@ -191,6 +224,33 @@ strong {
 }
 .hamburger::after {
 	bottom: 6px;
+}
+
+.contact-links {
+	position: fixed;
+	display: column;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 1;
+	padding: 8em 3.5em;
+	justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+	.nav-toggle {
+		padding: 0.5em 0.5em;
+		right: 1em;
+		top: 3em;
+	}
+	.nav-list {
+		justify-content: space-between;
+		padding: 0em 0.75em;
+	}
+	.contact-links {
+		padding: 8em 0.25em;
+		position: absolute;
+	}
 }
 
 /*Intro section*/
@@ -236,22 +296,118 @@ strong {
 	}
 }
 
-.contact-links-row {
-	display: flex;
-	align-items: center;
-	padding-bottom: 20px;
-	justify-content: space-around;
+/*Projects*/
+
+.projects {
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+}
+.project-description {
+	text-align: left;
+}
+.projects__title {
+	overflow: auto;
+	text-align: left;
+	color: var(--clr-accent);
+	font-size: var(--fs-h3);
+	margin-left: auto;
+	margin-right: auto;
+	margin: 2em 2em 1.5em 0em;
+	padding: 0em 0em;
+}
+.projects__a {
+	overflow: hidden;
+	display: grid;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	max-width: 100%;
+}
+
+.projects__item {
+	text-align: justify;
+	width: 100%;
+	padding: 2em 1em;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	max-width: 700px;
 }
 
 .tile-img {
-	width: 300px;
-	height: 300px;
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+		opacity 250ms linear;
 }
 
-#my-photo {
-	border-radius: 50%;
-	width: 200px;
-	height: 200px;
+.tile-img:hover {
+	transform: scale(1.1);
+	opacity: 0.75;
+}
+
+@media (min-width: 1000px) {
+	.projects__title {
+	}
+}
+
+/*About me*/
+
+.about-me {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.about-me__img {
+	grid-area: img;
+	max-width: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.about-me {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.about-me__img {
+	box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+	.about-me {
+		display: grid;
+		grid-template-columns: 1fr 200px;
+		grid-template-areas: "title img" "subtitle img" "text img";
+		grid-column-gap: 2em;
+	}
+	.section__title--about {
+		grid-column: title;
+	}
+
+	.section__subtitle--about {
+		grid-column: 1 / -1;
+		grid-row: 2;
+		position: relative;
+		left: -1em;
+		width: calc(100% + 2em);
+		padding-left: 1em;
+		padding-right: calc(200px + 4em);
+	}
+
+	.about-me__img {
+		grid-area: img;
+		position: relative;
+		z-index: 2;
+	}
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -293,12 +449,6 @@ strong {
 /* Style the collapsible content. Note: hidden by default */
 .content {
 	padding: 0 18px;
-	display: none;
-	overflow: hidden;
-	background-color: #f1f1f1;
-}
-
-#qiita {
-	margin-left: -10px;
-	margin-right: -10px;
+	display: flex;
+	overflow: visible;
 }
