@@ -1,3 +1,5 @@
+//collapsible JS -currently not used
+
 var coll = document.getElementsByClassName("collapsibleJS");
 var i;
 
@@ -24,6 +26,23 @@ navLinks.forEach((link) => {
 		document.body.classList.remove("nav-open");
 	});
 });
+
+//html-css collapse -currently not used
+
+var coll = document.getElementsByClassName("collapsibleHTMLcss");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function () {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+			content.style.display = "none";
+		} else {
+			content.style.display = "block";
+		}
+	});
+}
 
 //image load
 
@@ -55,4 +74,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.addEventListener("scroll", lazyload);
 	window.addEventListener("resize", lazyload);
 	window.addEventListener("orientationChange", lazyload);
+});
+
+//change colors on click
+
+$(document).ready(function () {
+	$("#change-colors-id").click(function () {
+		$("body").toggleClass("change-colors-action");
+	});
 });
