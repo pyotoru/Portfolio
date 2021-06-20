@@ -83,9 +83,3 @@ $(document).ready(function () {
 		$("body").toggleClass("change-colors-action");
 	});
 });
-
-$(document).ready(function () {
-	$("#change-colors-id").click(function () {
-		$("contact").toggleClass("change-colors-action-contact ");
-	});
-});
