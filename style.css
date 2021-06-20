@@ -156,12 +156,12 @@ strong {
 
 .nav-bar {
 	position: fixed;
-	background-color: transparent;
+	background-color: var(--clr-accent);
 	top: 0;
 	bottom: 1;
 	left: 0;
 	right: 0;
-	padding: 3em;
+	padding: 2em;
 	z-index: 100;
 	transform: translate(100%);
 	transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
@@ -226,7 +226,7 @@ strong {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-	background: var(--clr-accent);
+	background: currentColor;
 	width: 2em;
 	height: 3px;
 	border-radius: 1em;
@@ -432,7 +432,7 @@ strong {
 
 /*Contact*/
 
-#contact {
+.contact-section {
 	max-width: 1000px;
 	margin: 0 auto;
 }
