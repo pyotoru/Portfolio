@@ -109,6 +109,11 @@ strong {
 	color: var(--clr-dark);
 }
 
+.change-colors-action-contact {
+	background-color: var(--clr-light);
+	color: var(--clr-dark);
+}
+
 /*Typography*/
 
 .section__title {
@@ -269,9 +274,8 @@ strong {
 		position: absolute;
 	}
 
-	.change-colors {
+	#change-colors-id {
 		padding: 3em 0em;
-		position: absolute;
 		background: transparent;
 		top: 3em;
 		z-index: 101;
@@ -394,11 +398,6 @@ strong {
 	z-index: 2;
 }
 
-.about-me {
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
 .about-me__img {
 	box-shadow: var(--bs);
 }
@@ -429,6 +428,50 @@ strong {
 		position: relative;
 		z-index: 2;
 	}
+}
+
+/*Contact*/
+
+.contact {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.contact-form {
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+input[type="text"],
+select,
+textarea {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	color: var(--clr-dark);
+}
+
+input[type="submit"] {
+	background-color: var(--clr-accent);
+	color: var(--clr-dark);
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	opacity: 0.75;
+}
+
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
 }
 
 /* Style the button that is used to open and close the collapsible content */
