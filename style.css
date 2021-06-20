@@ -91,7 +91,7 @@ strong {
 	font-weight: var(--fw-bold);
 }
 
-.change-colors {
+#change-colors-id {
 	background: transparent;
 	padding: 2.5em;
 	border: 0;
