@@ -157,6 +157,7 @@ strong {
 .nav-bar {
 	position: fixed;
 	background-color: var(--clr-accent);
+	opacity: 0.75;
 	top: 0;
 	bottom: 1;
 	left: 0;
