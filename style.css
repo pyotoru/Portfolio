@@ -468,12 +468,6 @@ input[type="submit"]:hover {
 	opacity: 0.75;
 }
 
-.container {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
-}
-
 /* Style the button that is used to open and close the collapsible content */
 .collapsibleJS {
 	background-color: #141823;
