@@ -317,6 +317,7 @@ strong {
 	padding: 0em 0em;
 }
 .projects__a {
+	background-color: var(--clr-accent);
 	overflow: hidden;
 	display: grid;
 	margin-left: auto;
