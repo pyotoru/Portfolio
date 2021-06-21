@@ -93,12 +93,12 @@ strong {
 
 #change-colors-id {
 	background: transparent;
-	padding: 2.5em;
+	padding: 0em;
 	border: 0;
 	cursor: pointer;
 	position: fixed;
-	right: 1.75em;
-	top: 4em;
+	right: 4.25em;
+	top: 6.25em;
 	max-width: 100%;
 	color: var(--clr-accent);
 	z-index: 101;
@@ -276,13 +276,12 @@ strong {
 
 	#change-colors-id {
 		padding: 0em 0em 0em 0em;
-		background: transparent;
-		top: 6em;
+		right: 1.8em;
+		top: 6.25em;
 	}
 }
 
 /*Intro section*/
-
 
 .intro__img {
 	box-shadow: var(--bs);
