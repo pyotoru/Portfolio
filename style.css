@@ -275,9 +275,9 @@ strong {
 	}
 
 	#change-colors-id {
-		padding: 3em 0em;
+		padding: 0em 0em 0em 0em;
 		background: transparent;
-		top: 3em;
+		top: 6em;
 	}
 }
 
