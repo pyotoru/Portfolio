@@ -283,9 +283,6 @@ strong {
 
 /*Intro section*/
 
-.intro {
-	position: relative;
-}
 
 .intro__img {
 	box-shadow: var(--bs);
