@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
   <script src="https://kit.fontawesome.com/fec472640d.js" crossorigin="anonymous"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js"
+    integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -29,6 +31,10 @@
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="bulb-color">
+      <button id="change-colors-id"><i class=" far fa-lightbulb fa-2x"></i></button>
+    </div>
+
     <div class="contact-links">
 
       <div>
@@ -61,7 +67,7 @@
 
   <!--Projects-->
   <section class="projects text-center" id="projects">
-    <script src="./js-collapse.js"></script>
+    <script src="./index.js"></script>
 
     <h2>Projects</h2>
     <p>
@@ -91,22 +97,20 @@
       <p class="project-description">Used skills for this app:<br> bootstrap, jquery</p>
     </div>
 
-
     <div class="projects__item">
-      <div class="projects__a"><a href="https://github.com/pyotoru/mark-down-previewer">
-          <img class="tile-img lazy" alt="mark donw previever tile"
+      <div class="projects__a"><a href="https://pyotoru.github.io/mark-down-previewer/">
+          <img class="tile-img lazy" alt="mark-down-previewer tile"
             data-src="https://raw.githubusercontent.com/pyotoru/mark-down-previewer/main/markdown-previewer-preview.png">
         </a>
       </div>
-      <h3 class="projects__title"><strong>Mark down previewer</strong></h3>
+      <h3 class="projects__title"><strong>Markdown previewer app</strong></h3>
       <p class="project-description">Used skills for this app:<br>react.js</p>
     </div>
 
 
     <div class="projects__item">
-      <div class="projects__a"><a href="/Tribute_page/">
-          <img class="tile-img lazy" alt="tribute-page tile"
-            data-src="https://raw.githubusercontent.com/pyotoru/Portfolio/main/Tribute_page/tribute-page-preview.png">
+      <div class="projects__a"><a href="./Tribute_page/">
+          <img class="tile-img lazy" alt="tribute-page tile" data-src="Tribute_page/tribute-page-preview.png">
         </a>
       </div>
       <h3 class="projects__title"><strong>Tribute Page</strong></h3>
@@ -114,9 +118,8 @@
     </div>
 
     <div class="projects__item">
-      <div class="projects__a"><a href="/Survey_form/">
-          <img class="tile-img lazy" alt="survey form tile"
-            data-src="https://pyotoru.github.io/Portfolio/Survey_form/2021-03-13_14-06.png">
+      <div class="projects__a"><a href="./Survey_form/">
+          <img class="tile-img lazy" alt="survey form tile" data-src="Survey_form/Survey-form-preview.png">
         </a>
       </div>
       <h3 class="projects__title"><strong>Survey form</strong></h3>
@@ -125,9 +128,9 @@
 
 
     <div class="projects__item">
-      <div class="projects__a"><a href="/Product_landing_page/">
+      <div class="projects__a"><a href="./Product_landing_page/">
           <img class="tile-img lazy" alt="Product page tile"
-            data-src="https://raw.githubusercontent.com/pyotoru/Portfolio/main/Product_landing_page/product-landing-page-preview.png">
+            data-src="Product_landing_page/product-landing-page-preview.png">
         </a>
       </div>
       <h3 class="projects__title"><strong>Product page</strong></h3>
@@ -136,9 +139,9 @@
 
 
     <div class="projects__item">
-      <div class="projects__a"><a href="/Documentation_page/">
+      <div class="projects__a"><a href="./Documentation_page/">
           <img class="tile-img lazy" alt="technical documentation page tile"
-            data-src="https://raw.githubusercontent.com/pyotoru/Portfolio/main/Documentation_page/2021-03-13_14-06_1.png">
+            data-src="Documentation_page/documentation-page-preview.png">
         </a>
       </div>
       <h3 class="projects__title"><strong>Technical documentation page</strong></h3>
@@ -152,7 +155,7 @@
   <section class="about-me" id="about-me">
     <h2 class="section__title section__title--about">About me</h2>
 
-    <img class="about-me__img lazy" alt="photo of me standing" data-src="/img/about-me.jpg" loading="lazy">
+    <img class="about-me__img lazy" alt="photo of me standing" data-src="img/about-me.jpg" loading="lazy">
     <p class="section__subtitle section__subtitle--about"> <b>Name</b>: Piotr Wawrzyniak<br>
       <b>Date of birth</b>: 01/04/1993<br>
       <b>Place of birth</b>: Poland, Poznan<br>
@@ -160,17 +163,38 @@
       <b>Alma mater</b>: SOAS (University of London)<br>
     </p>
     <p>I am currently studying html, css and javascript for hobby.
-      I usually spend my time working out, watching football, playing piano,
+      Apart from studying web development, I usually spend my time working out, watching football, playing piano,
       playing video games and reading books.
     </p>
   </section>
 
   <!--Contact-->
+  <section class="contact-section" id="contact">
+    <h2 class="section__title">Contact</h3>
+
+      <div class="contact-form">
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+          <label for="lname">Email address</label>
+          <input type="text" id="lname" name="lastname" placeholder="Write your email address...">
+
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+  </section>
 
 
 
-
-  <footer id="footer"></footer>
 </body>
 
 </html>
