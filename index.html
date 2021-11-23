@@ -1,258 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-  </head>
-  <body class="text-center">
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/fec472640d.js"
-      crossorigin="anonymous"
-    ></script>
-    <div id="main">
-      <!--Welcome section-->
-      <header>
-        <section id="welcome-section">
-          <h1>
-            Hi, my name is Piotr<br />a starting web developer<br />This is my
-            portfolio<br />
-            <span id="navbar">
-              <a class="nav-link" href="#projects">Projects</a>
-              <a class="nav-link" href="#about-me">About me</a>
-              <a class="nav-link" href="#contact">Contact</a>
-            </span>
-          </h1>
-        </section>
-      </header>
-      <br />
-      <br />
-      <!--end of Welcome section-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
+  <script src="https://kit.fontawesome.com/fec472640d.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js"
+    integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+</head>
+<body>
 
-      <!--Start of projects section-->
-      <section id="projects">
-        <h2 class="text-center">Projects</h2>
-        <p>Have a look at my current projects.</p>
-        <br />
-        <button type="button" class="collapsibleJS">
-          <b>JavaScript </b><i class="far fa-caret-square-down"></i>
-        </button>
-        <div class="content">
-          <div class="row">
-            <div class="col-xs-6 col-md-4 col-lg-4" id="toto-app">
-              <h3>Toto app</h3>
-              <a href="https://github.com/pyotoru/toto-app">
-                <img
-                  class="tile-img"
-                  alt="tribute-page tile"
-                  src="https://raw.githubusercontent.com/pyotoru/toto-app/master/toto-app-preview.png"
-                  width="280"
-                  height="280"
-                />
-              </a>
-              <script src="./js-collapse.js"></script>
-            </div>
+  <header>
 
-            <div class="col-xs-6 col-md-4 col-lg-4" id="random-quote-app">
-              <h3>Random programming quotes app</h3>
-              <a href="https://github.com/pyotoru/random-quote-machine">
-                <img
-                  class="tile-img"
-                  alt="random-programming-quotes-app tile"
-                  src="https://raw.githubusercontent.com/pyotoru/random-quote-machine/main/random-programming-quotes-app-preview.png"
-                  width="280"
-                  height="280"
-                />
-              </a>
-            </div>
-
-            <div class="col-xs-6 col-md-4 col-lg-4" id="random-quote-app">
-              <h3>Markdown previewer</h3>
-              <a href="https://github.com/pyotoru/mark-down-previewer">
-                <img
-                  class="tile-img"
-                  alt="random-programming-quotes-app tile"
-                  src="https://raw.githubusercontent.com/pyotoru/mark-down-previewer/main/markdown-previewer-preview.png"
-                  width="280"
-                  height="280"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <br />
-
-        <button type="button" class="collapsibleHTMLcss">
-          <b>Plain HTML/CSS </b><i class="far fa-caret-square-down"></i>
-        </button>
-        <div class="content">
-          <div class="row">
-            <div class="col-xs-6 col-md-4 col-lg-4" id="tribute-page">
-              <h3>Tribute Page</h3>
-              <a href="https://pyotoru.github.io/Portfolio/Tribute_page/">
-                <img
-                  class="tile-img"
-                  alt="tribute-page tile"
-                  src="https://raw.githubusercontent.com/pyotoru/Portfolio/main/Tribute_page/tribute-page-preview.png"
-                  width="280"
-                  height="280"
-                />
-              </a>
-            </div>
-            <div class="col-xs-6 col-md-4 col-lg-4" id="survey-form">
-              <h3>Survey form</h3>
-              <a href="https://pyotoru.github.io/Portfolio/Survey_form/">
-                <img
-                  class="tile-img"
-                  alt="survey form tile"
-                  src="https://pyotoru.github.io/Portfolio/Survey_form/2021-03-13_14-06.png"
-                  width="280"
-                  height="280"
-                />
-              </a>
-            </div>
-            <div class="col-xs-6 col-md-4 col-lg-4" id="product-page">
-              <h3>Product page</h3>
-              <a
-                href="https://pyotoru.github.io/Portfolio/Product_landing_page/"
-              >
-                <img
-                  class="tile-img"
-                  alt="product page tile"
-                  src="https://raw.githubusercontent.com/pyotoru/Portfolio/main/Product_landing_page/product-landing-page-preview.png"
-                  width="280"
-                  height="280"
-                />
-              </a>
-            </div>
-            <div
-              class="col-xs-6 col-md-4 col-lg-4"
-              id="technical-documentation"
-            >
-              <h3>Technical documentation page</h3>
-              <a href="https://pyotoru.github.io/Portfolio/Documentation_page/">
-                <img
-                  class="tile-img"
-                  alt="technical documentation tile"
-                  src="https://raw.githubusercontent.com/pyotoru/Portfolio/main/Documentation_page/2021-03-13_14-06_1.png"
-                  width="280"
-                  height="280"
-                />
-              </a>
-              <script src="./html-css-colapse.js"></script>
-            </div>
-          </div>
-        </div>
-      </section>
-      <br />
-      <br />
-      <!--end of projects section-->
-
-      <!--start of about-me section-->
-      <section id="about-me">
-        <h2>About me</h2>
-        <br />
-        <div class="about-me center-block">
-          <img
-            class="img-responsive"
-            id="my-photo"
-            alt="phot of me"
-            src="https://pyotoru.github.io/Portfolio/photo_of_me.png"
-          />
-          <span class="text-left">
-            <b>Name</b>: Piotr Wawrzyniak<br />
-            <b>Date of birth</b>: 01/04/1993<br />
-            <b>Place of birth</b>: Poland, Poznan<br />
-            <b>Place of residence</b>: Japan, Tokyo<br />
-            <b>Alma mater</b>: SOAS (University of London)<br />
-          </span>
-        </div>
-        <br />
-        <p id="profile">
-          I am currently studying html, css and javascript. I plan to become a
-          full stack web developer in the near future.
-          <br />
-          Apart from studying web development, I usually spend my time working
-          out, watching football, playing piano, playing video games and reading
-          books. <br />
-        </p>
-      </section>
-      <br />
-      <!--end of about-me section-->
-
-      <!--start of contact section-->
-      <section id="contact">
-        <h2>Contact</h2>
-        I am waiting for your contact. Pick your favorite.
-        <br />
-        <br />
-        <div class="contact-links-row">
-          <div>
-            <a
-              href="mailto:wawrzyniak.peter@gmail.com"
-              target="_blank"
-              class="btn contact-details"
-              id="profile-link"
-            >
-              <i class="fas fa-at fa-lg" style="color: #d44638"></i>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://github.com/pyotoru/"
-              target="_blank"
-              class="btn contact-details"
-              id="profile-link"
-              ><i class="fab fa-github fa-lg" style="color: #141823"></i>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://twitter.com/batatshi"
-              target="_blank"
-              class="btn contact-details"
-              id="profile-link"
-              ><i class="fab fa-twitter fa-lg" style="color: #00acee"></i>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.facebook.com/batatshi"
-              target="_blank"
-              class="btn contact-details"
-              id="profile-link"
-              ><i
-                class="fab fa-facebook-square fa-lg"
-                style="color: #3b5998"
-              ></i>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://qiita.com/pyotoru"
-              target="_blank"
-              class="btn contact-details"
-              id="profile-link"
-            >
-              <div id="qiita" class="fa-stack" style="color: #4cb10d">
-                <i class="fa fa-square fa-lg"></i>
-                <i class="fa fa-search fa-stack-1x fa-inverse fa-lg"></i>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
+    <div class="logo">
+    </div>
+    <button class="nav-toggle" area-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav-bar">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-me">About me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="bulb-color">
+      <button id="change-colors-id"><i class=" far fa-lightbulb fa-2x"></i></button>
     </div>
 
-    <!--end of contact section-->
-    <footer id="footer"></footer>
-  </body>
+    <div class="contact-links">
+
+      <div>
+        <a href="https://github.com/pyotoru/" target="_blank" class="btn contact-details" id="profile-link"><i
+            class="fab fa-github fa-lg" style="color:var(--clr-accent)"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/batatshi" target="_blank" class="btn contact-details" id="profile-link"><i
+            class="fab fa-twitter fa-lg" style="color:var(--clr-accent);"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/batatshi" target="_blank" class="btn contact-details" id="profile-link"><i
+            class="fab fa-facebook-square fa-lg" style="color:var(--clr-accent);"></i>
+        </a>
+      </div>
+    </div>
+
+    </div>
+
+  </header>
+
+  <!--Introduction-->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">Hi, I am <strong>Piotr</strong><br></h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
+    <img src="img/introduction.jpg" alt="a picture of me" class="intro__img">
+  </section>
+
+  <!--Projects-->
+  <section class="projects text-center" id="projects">
+    <script src="./index.js"></script>
+
+    <h2>Projects</h2>
+    <p>
+      Have a look at my current projects.
+    </p>
+
+
+    <div class="projects__item">
+      <a href="https://github.com/pyotoru/toto-app" class="projects__a">
+        <img class="tile-img lazy" alt="toto app tile"
+          data-src="https://raw.githubusercontent.com/pyotoru/toto-app/master/toto-app-preview.png">
+      </a>
+
+      <h3 class="projects__title"><strong>Toto app</strong></h3>
+      <p class="project-description">Used skills for this app:<br> bootstrap, jquery</p>
+
+    </div>
+
+
+    <div class="projects__item">
+      <div class="projects__a"><a href="https://github.com/pyotoru/random-quote-machine">
+          <img class="tile-img lazy" alt="random-programming-quotes-app tile"
+            data-src="https://raw.githubusercontent.com/pyotoru/random-quote-machine/main/random-programming-quotes-app-preview.png">
+        </a>
+      </div>
+      <h3 class="projects__title"><strong>Random programming quotes app</strong></h3>
+      <p class="project-description">Used skills for this app:<br> bootstrap, jquery</p>
+    </div>
+
+    <div class="projects__item">
+      <div class="projects__a"><a href="https://pyotoru.github.io/mark-down-previewer/">
+          <img class="tile-img lazy" alt="mark-down-previewer tile"
+            data-src="https://raw.githubusercontent.com/pyotoru/mark-down-previewer/main/markdown-previewer-preview.png">
+        </a>
+      </div>
+      <h3 class="projects__title"><strong>Markdown previewer app</strong></h3>
+      <p class="project-description">Used skills for this app:<br>react.js</p>
+    </div>
+
+
+    <div class="projects__item">
+      <div class="projects__a"><a href="./Tribute_page/">
+          <img class="tile-img lazy" alt="tribute-page tile" data-src="Tribute_page/tribute-page-preview.png">
+        </a>
+      </div>
+      <h3 class="projects__title"><strong>Tribute Page</strong></h3>
+      <p class="project-description">Used skills for this app:<br>html, css</p>
+    </div>
+
+    <div class="projects__item">
+      <div class="projects__a"><a href="./Survey_form/">
+          <img class="tile-img lazy" alt="survey form tile" data-src="Survey_form/Survey-form-preview.png">
+        </a>
+      </div>
+      <h3 class="projects__title"><strong>Survey form</strong></h3>
+      <p class="project-description">Used skills for this app:<br>html, css</p>
+    </div>
+
+
+    <div class="projects__item">
+      <div class="projects__a"><a href="./Product_landing_page/">
+          <img class="tile-img lazy" alt="Product page tile"
+            data-src="Product_landing_page/product-landing-page-preview.png">
+        </a>
+      </div>
+      <h3 class="projects__title"><strong>Product page</strong></h3>
+      <p class="project-description">Used skills for this app:<br>html, css</p>
+    </div>
+
+
+    <div class="projects__item">
+      <div class="projects__a"><a href="./Documentation_page/">
+          <img class="tile-img lazy" alt="technical documentation page tile"
+            data-src="Documentation_page/documentation-page-preview.png">
+        </a>
+      </div>
+      <h3 class="projects__title"><strong>Technical documentation page</strong></h3>
+      <p class="project-description">Used skills for this app:<br>html, css</p>
+    </div>
+
+  </section>
+
+
+  <!--About me-->
+  <section class="about-me" id="about-me">
+    <h2 class="section__title section__title--about">About me</h2>
+
+    <img class="about-me__img lazy" alt="photo of me standing" data-src="img/about-me.jpg" loading="lazy">
+    <p class="section__subtitle section__subtitle--about"> <b>Name</b>: Piotr Wawrzyniak<br>
+      <b>Date of birth</b>: 01/04/1993<br>
+      <b>Place of birth</b>: Poland, Poznan<br>
+      <b>Place of residence</b>: Japan, Tokyo<br>
+      <b>Alma mater</b>: SOAS (University of London)<br>
+    </p>
+    <p>I am currently studying html, css and javascript for hobby.
+      Apart from studying web development, I usually spend my time working out, watching football, playing piano,
+      playing video games and reading books.
+    </p>
+  </section>
+
+  <!--Contact-->
+  <section class="contact-section" id="contact">
+    <h2 class="section__title">Contact</h3>
+
+      <div class="contact-form">
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+          <label for="lname">Email address</label>
+          <input type="text" id="lname" name="lastname" placeholder="Write your email address...">
+
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+  </section>
+
+
+
+</body>
+
 </html>
